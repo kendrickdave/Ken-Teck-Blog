@@ -13,6 +13,7 @@ export default function Header() {
           K-T</span> 
        Blog
       </Link>
+      {/* search input for desktop view  */}
       <form>
        <TextInput
        type='text'
@@ -21,15 +22,19 @@ export default function Header() {
        className='hidden lg:inline'
        />
       </form>
+
+      {/* search button for mobile view  */}
       <Button className='w-12 h-10 lg:hidden' color ='gray' pill>
         <AiOutlineSearch />
       </Button>
       
+      {/* light and dark mode control */}
       <div className=''>
        <Button>
         <FaMoon/>
        </Button>
       </div>
+
     </Navbar>
   );
 }

@@ -2,6 +2,7 @@ import express from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 import userRouter from "./routes/user.route.js";
+import  authaRoutse from  "./routes/auth.route.js";
 
 // databse connection
 dotenv.config();
@@ -25,3 +26,4 @@ app.listen(3000, () => {
 
 //api creation
 app.use('/api/user', userRouter);
+app.use('/api/user', userRouter)
